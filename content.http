@@ -1,0 +1,21 @@
+### find all content
+GET http://localhost:8080/api/content
+
+### find content by id
+GET http://localhost:8080/api/content/1
+
+### Create new content
+POST http://localhost:8080/api/content/2
+Content-Type: application/json
+
+{
+  "id":2,"title": "test",  "desc":"test is desc", "status":"IDEA", "contentType":"ARTICLE","dateCreated": "",  "dateUpdated":null,  "url":""
+}
+
+### update existing content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id":69,"title": "My CRUD",  "desc":"test is desc", "status":"IDEA", "contentType":"ARTICLE","dateCreated": "",  "dateUpdated":null,  "url":""
+}
